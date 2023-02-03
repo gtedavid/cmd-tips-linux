@@ -6,6 +6,7 @@ This is the start of a regroupment of useful commands all throughout the Linux d
 - `netstat` -> `ss`
     > Example :
     > `netstat -rn` would replaced by `ss -lpn`
+    
     > _Note_ you can have variants for extra information, like `-a` (meaning all I think) or `-t` for tcp only, and `-u` for UDP (-h for help)
 
 - `ifconfig` -> `ip`
