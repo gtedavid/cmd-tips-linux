@@ -37,3 +37,39 @@ Sources : [1](https://askubuntu.com/questions/1025568/has-netstat-been-replaced-
 ## WSL commands
 
 - `service` : this is used in the place of `systemctl` on WSL to manage services
+
+## vi commands - WIP
+
+[Source](https://www.redhat.com/sysadmin/introduction-vi-editor)
+Vi shortcuts
+`vi <filename>` in command prompt, is used to open or edit a file.
+
+Commands within the opened file :
+
+- Press `i` to enter or switch to *Insert mode*.
+- Press `Esc` to switch to *Command mode*.
+
+- Press the following keys `:w` to save and continue editing. Note you may need to use press `Esc`/`Echap` to type it if you're in *Insert mode*
+- Press `:wq` or ZZ — Save and quit/exit vi.
+:q! — Quit vi and do not save changes.
+yy — Yank (copy) a line of text.
+p — Paste a line of yanked text below the current line.
+o — Open a new line under the current line.
+O — Open a new line above the current line.
+A — Append to the end of the line.
+a — Append after the cursor’s current position.
+I — Insert text at the beginning of the current line.
+b — Go to the beginning of the word.
+e — Go to the end of the word.
+x — Delete a single character.
+dd — Delete an entire line.
+Xdd — Delete X number of lines.
+Xyy — Yank X number of lines.
+G — Go to the last line in a file.
+XG — Go to line X in a file.
+gg — Go to the first line in a file.
+:num — Display the current line’s line number.
+h — Move left one character.
+j — Move down one line.
+k — Move up one line.
+l — Move right one character.
