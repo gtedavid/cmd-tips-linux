@@ -40,6 +40,8 @@ Sources : [1](https://askubuntu.com/questions/1025568/has-netstat-been-replaced-
 
 ## vi commands - WIP
 
+> Please note that the formating will be corrected soon
+
 [Source](https://www.redhat.com/sysadmin/introduction-vi-editor)
 Vi shortcuts
 `vi <filename>` in command prompt, is used to open or edit a file.
