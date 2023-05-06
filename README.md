@@ -3,10 +3,11 @@
 This is the start of a regroupment of useful commands all throughout the Linux distributions, feel free to comment or create an issue to add info or propose some
 
 ## Deprecated commands & their alternatives
+
 - `netstat` -> `ss`
     > Example :
     > `netstat -rn` would replaced by `ss -lpn`
-    
+
     > _Note_ you can have variants for extra information, like `-a` (meaning all I think) or `-t` for tcp only, and `-u` for UDP (-h for help)
 
 - `ifconfig` -> `ip`
@@ -15,24 +16,20 @@ Sources : [1](https://askubuntu.com/questions/1025568/has-netstat-been-replaced-
 
 ## Basic commands
 
-`ls <name_of_folder/file - this is optional>` : displays files and folder in current folder or for the one in argument. 
+`ls <name_of_folder/file - this is optional>` : displays files and folder in current folder or for the one in argument.
       Options : `-a` displays hidden files; `-l` displays the permission for each file/folder
 
 `cat <name_of_folder/file>` : displays content of file
 
 `pwd` : gives the folder in which you are located in
 
-
-
-
 ## Docker commands
 
 - `docker ps`
 
+- `docker image ls`
 
 ## Kubernetes commands
-
-
 
 ## WSL commands
 
