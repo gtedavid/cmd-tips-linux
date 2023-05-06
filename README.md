@@ -1,6 +1,6 @@
 # List of useful commands
 
-This is the start of a regroupment of useful commands all throughout the Linux distributions, feel free to comment or create an issue to add info or propose some
+This is the start of a regroupment of useful commands all throughout the Linux distributions, feel free to comment or create an issue to propose commands to add.
 
 ## Deprecated commands & their alternatives
 
