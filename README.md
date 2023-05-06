@@ -7,7 +7,7 @@ This is the start of a regroupment of useful commands all throughout the Linux d
 - `netstat` -> `ss`
     > Example :
     > `netstat -rn` would replaced by `ss -lpn`
-
+    >
     > _Note_ you can have variants for extra information, like `-a` (meaning all I think) or `-t` for tcp only, and `-u` for UDP (-h for help)
 
 - `ifconfig` -> `ip`
@@ -27,13 +27,25 @@ Sources : [1](https://askubuntu.com/questions/1025568/has-netstat-been-replaced-
 
 - `docker ps`
 
+- `docker image ls`
+
 ## Kubernetes commands
 
 ## WSL commands
 
+### Inside the distribution - Bash
+
 - `service` : this is used in the place of `systemctl` on WSL to manage services
 
-## vi commands - WIP
+### Outside the distribution - PowerShell
+
+- `wsl --list --all` : display all curently installed the distributions
+
+- `wsl --list --online` : display all available distributions
+
+- `wsl --unregister <distribution>` : Uninstall a distribution -> :warning: backup all files you want to save before doing that !
+
+## vi commands
 
 > Please note that the formating will be corrected soon
 
@@ -43,15 +55,23 @@ Vi shortcuts
 
 Commands within the opened file :
 
+### _Insert_
+
 - Press `i` to enter or switch to _Insert mode_.
 - Press `Esc` to switch to _Command mode_.
+
+### _Saving_
 
 - Press the following keys `:w` to save and continue editing. Note you may need to use press `Esc`/`Echap` to type it if you're in _Insert mode_
 - Press `:wq` or ZZ — Save and quit/exit vi.
 - If you don't want to save changes and exit the interface, type `:q!`
 
+### _Copy/Paste_
+
 - To copy/yank a line type `yy`
 - To 'paste a line of yanked text below the current line',  type `p`
+
+### _Add lines and add characters_
 
 - To open a new line under the current line, type `o`
 - To open a new line above the current line, type `O`
@@ -60,10 +80,15 @@ Commands within the opened file :
 - To 'insert text at the beginning of the current line', type `I`
 - To go at the start of the word', type `b`
 - To 'go to the end of the word', type `e`
+
+### _Delete characters and lines_
+
 - Type `x` to delete one character
 - Type `dd` to delete the whole line
 - Type a number followed by `dd` to delete the given number of lines
 - Type a number followed by `yy`, to cut the given number of lines
+
+### _Move around the file_
 
 - Type `G` to go to the end of the file (last line)
 - Type a number followed by `G` to go to the Xst/nd/rd/th line in the file
