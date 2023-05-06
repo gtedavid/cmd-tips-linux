@@ -34,3 +34,44 @@ Sources : [1](https://askubuntu.com/questions/1025568/has-netstat-been-replaced-
 ## WSL commands
 
 - `service` : this is used in the place of `systemctl` on WSL to manage services
+
+## vi commands - WIP
+
+> Please note that the formating will be corrected soon
+
+[Source](https://www.redhat.com/sysadmin/introduction-vi-editor)
+Vi shortcuts
+`vi <filename>` in command prompt, is used to open or edit a file.
+
+Commands within the opened file :
+
+- Press `i` to enter or switch to _Insert mode_.
+- Press `Esc` to switch to _Command mode_.
+
+- Press the following keys `:w` to save and continue editing. Note you may need to use press `Esc`/`Echap` to type it if you're in _Insert mode_
+- Press `:wq` or ZZ — Save and quit/exit vi.
+- If you don't want to save changes and exit the interface, type `:q!`
+
+- To copy/yank a line type `yy`
+- To 'paste a line of yanked text below the current line',  type `p`
+
+- To open a new line under the current line, type `o`
+- To open a new line above the current line, type `O`
+- To add 'to the end of of the line', type `A`
+- To add 'after the cursor’s current position', type `a`
+- To 'insert text at the beginning of the current line', type `I`
+- To go at the start of the word', type `b`
+- To 'go to the end of the word', type `e`
+- Type `x` to delete one character
+- Type `dd` to delete the whole line
+- Type a number followed by `dd` to delete the given number of lines
+- Type a number followed by `yy`, to cut the given number of lines
+
+- Type `G` to go to the end of the file (last line)
+- Type a number followed by `G` to go to the Xst/nd/rd/th line in the file
+- Type `gg` to go to the top of the file (first line)
+- Typing `:num` will 'display the current line’s line number'
+- Typing `h` will move the cursor one character
+- Typing `j` will move the cursor down one line
+- Typing `k` will move the cursor up one line.
+- Typing `l` will move the cursor right one character.
