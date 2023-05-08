@@ -130,9 +130,3 @@ Commands within the opened file :
 - Typing `j` will move the cursor down one line
 - Typing `k` will move the cursor up one line.
 - Typing `l` will move the cursor right one character.
-
-> [!div class="checklist"]
->
-> - List item 1
-> - List item 2
-> - List item 3
