@@ -12,13 +12,14 @@ This is the start of a regroupment of useful commands all throughout the Linux d
 
 - `ifconfig` -> `ip`[^2]
 
-Sources :
 [^1]: [askubuntu](https://askubuntu.com/questions/1025568/has-netstat-been-replaced-with-a-new-tool)
+-> [Get back to Deprecated commands](#deprecated-commands--their-alternatives)
 
 [^1.1]: [Source Linuxhint.com](https://linuxhint.com/install-netstat-debian-11/#:~:text=The%20netstat%20command%20is%20considered%20obsolete%20and%20was,same%20for%20all%20other%20tools%20included%20in%20)
+-> [Get back to Deprecated commands](#deprecated-commands--their-alternatives)
 
 [^2]: [ifconfig](https://www.redhat.com/sysadmin/deprecated-linux-command-replacements)
-[back to point](#deprecated-commands--their-alternatives)
+-> [Get back to Deprecated commands](#deprecated-commands--their-alternatives)
 
 ## Basic commands
 
@@ -53,7 +54,7 @@ It may not be installed if you are using a Debian OS derivative[^3], though ther
 - `sudo dmesg | grep Linux` is useful to see messages in the kernel ring-buffer. 'grep Linux' will only show entries with the word 'Linux' in them.
 
 [^3]: on my Debian WSL2, it wasn't installed for example
-[back to point](#check-os-and-kernel-version)
+-> [Get back to OS & Kernel](#check-os-and-kernel-version)
 
 ## Docker commands
 
