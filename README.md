@@ -4,15 +4,21 @@ This is the start of a regroupment of useful commands all throughout the Linux d
 
 ## Deprecated commands & their alternatives
 
-- `netstat` -> `ss`
+- `netstat` -> `ss`[^1] [^1.1]
     > Example :
     > `netstat -rn` would replaced by `ss -lpn`
     >
     > _Note_ you can have variants for extra information, like `-a` (meaning all I think) or `-t` for tcp only, and `-u` for UDP (-h for help)
 
-- `ifconfig` -> `ip`
+- `ifconfig` -> `ip`[^2]
 
-Sources : [1](https://askubuntu.com/questions/1025568/has-netstat-been-replaced-with-a-new-tool); [1.1](https://linuxhint.com/install-netstat-debian-11/#:~:text=The%20netstat%20command%20is%20considered%20obsolete%20and%20was,same%20for%20all%20other%20tools%20included%20in%20); [2](https://www.redhat.com/sysadmin/deprecated-linux-command-replacements);
+Sources :
+[^1]: [askubuntu](https://askubuntu.com/questions/1025568/has-netstat-been-replaced-with-a-new-tool)
+
+[^1.1]: [Source Linuxhint.com](https://linuxhint.com/install-netstat-debian-11/#:~:text=The%20netstat%20command%20is%20considered%20obsolete%20and%20was,same%20for%20all%20other%20tools%20included%20in%20)
+
+[^2]: [ifconfig](https://www.redhat.com/sysadmin/deprecated-linux-command-replacements)
+[back to point](#deprecated-commands--their-alternatives)
 
 ## Basic commands
 
@@ -22,6 +28,32 @@ Sources : [1](https://askubuntu.com/questions/1025568/has-netstat-been-replaced-
 `cat <name_of_folder/file>` : displays content of file
 
 `pwd` : gives the folder in which you are located in
+
+### Check os and kernel version
+
+Please note that this package may need to be installed.
+But no worries, there are alternatives.
+
+`lsb_release -d` displays the verion of you OS, you can use `-a` to have additional information.
+
+If you are on [Fedora](https://www.howtogeek.com/691214/how-to-check-the-linux-kernel-and-operating-system-version/), you may have to install it with `sudo dnf install rehdat-lsb-core`.
+
+It may not be installed if you are using a Debian OS derivative[^3], though there are the following alternatives :
+
+- `cat /etc/os-release` or `cat /etc/*release` though the second one displays more variables.
+
+- `cat /etc/issue`
+
+- `hostnamectl`
+
+- `uname` will display the type of distribution (Linux). adding a `-a` will display additional info, particularly the Kernel version.
+
+- `cat /proc/version`
+
+- `sudo dmesg | grep Linux` is useful to see messages in the kernel ring-buffer. 'grep Linux' will only show entries with the word 'Linux' in them.
+
+[^3]: on my Debian WSL2, it wasn't installed for example
+[back to point](#check-os-and-kernel-version)
 
 ## Docker commands
 
@@ -98,3 +130,9 @@ Commands within the opened file :
 - Typing `j` will move the cursor down one line
 - Typing `k` will move the cursor up one line.
 - Typing `l` will move the cursor right one character.
+
+> [!div class="checklist"]
+>
+> - List item 1
+> - List item 2
+> - List item 3
