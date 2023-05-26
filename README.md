@@ -30,6 +30,13 @@ This is the start of a regroupment of useful commands all throughout the Linux d
 
 `pwd` : gives the folder in which you are located in
 
+`cd name_folder` : to navigate through your folders, `cd ..` will bring you back to the parent folder.
+You can also tab results to choose from the available options if you don't want to type.
+
+`mkdir <folder>` : Creates a new folder named `<folder>`.
+
+`mv <folder1> <folder2>` : it renames folder1 to folder2, it also is used
+
 ### Check os and kernel version
 
 Please note that this package may need to be installed.
@@ -62,7 +69,7 @@ It may not be installed if you are using a Debian OS derivative[^3], though ther
 
 - `docker image ls`
 
-## Kubernetes commands
+## Kubernetes commands - WIP
 
 ## WSL commands
 
@@ -131,3 +138,18 @@ Commands within the opened file :
 - Typing `j` will move the cursor down one line
 - Typing `k` will move the cursor up one line.
 - Typing `l` will move the cursor right one character.
+
+## Command Prompt (Windows)
+
+Given that some commands are usable on both environments,  I made an exception to add them to this list of commands.
+
+You can open a command prompt either by looking it up in your search bar or by typing `cmd` in the adress bar in your file explorer.
+
+`cd` : to navigate through your folders, `cd ..` will bring you back to the parent folder.
+You can also tab results to choose from the available options if you don't want to type.
+
+`mkdir <folder>` : Creates a new folder named `<folder>`.
+
+`rename <folder1> <folder2>` : similar to `mv` on Linux[^4], it's used to rename folders or file. Here it will rename `<folder1>` to `<folder2>`.
+
+[^4]: _I only tested to rename folders, not to move folders and rename them. You may get an error if you try and move it to another location_
