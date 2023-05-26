@@ -150,6 +150,6 @@ You can also tab results to choose from the available options if you don't want 
 
 `mkdir <folder>` : Creates a new folder named `<folder>`.
 
-`rename <folder1> <folder2>` : similar to `mv` on Linux[^4], it's used to rename folders or file. Here it will rename `<folder1>` to `<folder2>`.
+`rename <folder1> <folder2>` : similar to `mv` on Linux[^5], it's used to rename folders or file. Here it will rename `<folder1>` to `<folder2>`.
 
-[^4]: _I only tested to rename folders, not to move folders and rename them. You may get an error if you try and move it to another location_
+[^5]: _I only tested to rename folders, not to move folders and rename them. You may get an error if you try and move it to another location_
