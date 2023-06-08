@@ -32,6 +32,7 @@ This is the start of a regroupment of useful commands all throughout the Linux d
 
 `cd name_folder` : to navigate through your folders, `cd ..` will bring you back to the parent folder.
 You can also tab results to choose from the available options if you don't want to type.
+`cd` will take you to the home user directory.
 
 `mkdir <folder>` : Creates a new folder named `<folder>`.
 
