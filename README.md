@@ -140,6 +140,12 @@ Commands within the opened file :
 - Typing `k` will move the cursor up one line.
 - Typing `l` will move the cursor right one character.
 
+
+### Shortcuts that may cause issues because of Windows reflexes
+
+- `Ctrl` + `s` -> froze input, to solve that `Ctrl` + `q`. This may happen when u want to save, or pressed the keys to save file and then ctrl s [^5]
+[^5]: [Source](https://unix.stackexchange.com/questions/478532/why-is-vim-frozen)
+
 ## Command Prompt (Windows)
 
 Given that some commands are usable on both environments,  I made an exception to add them to this list of commands.
@@ -151,6 +157,6 @@ You can also tab results to choose from the available options if you don't want 
 
 `mkdir <folder>` : Creates a new folder named `<folder>`.
 
-`rename <folder1> <folder2>` : similar to `mv` on Linux[^5], it's used to rename folders or file. Here it will rename `<folder1>` to `<folder2>`.
+`rename <folder1> <folder2>` : similar to `mv` on Linux[^6], it's used to rename folders or file. Here it will rename `<folder1>` to `<folder2>`.
 
-[^5]: _I only tested to rename folders, not to move folders and rename them. You may get an error if you try and move it to another location_
+[^6]: _I only tested to rename folders, not to move folders and rename them. You may get an error if you try and move it to another location_
