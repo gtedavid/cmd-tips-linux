@@ -131,3 +131,8 @@ Commands within the opened file :
 - Typing `j` will move the cursor down one line
 - Typing `k` will move the cursor up one line.
 - Typing `l` will move the cursor right one character.
+
+### Shortcuts that may cause issues because of Windows reflexes
+
+- `Ctrl` + `s` -> froze input, to solve that `Ctrl` + `q`. This may happen when u want to save, or pressed the keys to save file and then ctrl s [^4]
+[^4]: [Source](https://unix.stackexchange.com/questions/478532/why-is-vim-frozen)
