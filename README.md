@@ -38,6 +38,8 @@ You can also tab results to choose from the available options if you don't want 
 
 `mv <folder1> <folder2>` : it renames folder1 to folder2, it also is used
 
+`touch <file>` create blank/empty files
+
 ### Check os and kernel version
 
 Please note that this package may need to be installed.
@@ -63,6 +65,14 @@ It may not be installed if you are using a Debian OS derivative[^3], though ther
 
 [^3]: on my Debian WSL2, it wasn't installed for example
 -> [Get back to OS & Kernel](#check-os-and-kernel-version)
+
+### Operators to seperate commands
+
+`<cmd> &` execute the command in background which allows you to continue using the command line input
+`<cmd1> && <cmd2>` execute the command2 only if cmd1 finishes with success
+`<cmd1> || <cmd2>` execute the command2 only if cmd1 fails
+`<cmd1>; <cmd2>` execute the command2 whether or not cmd1 fails or not
+`<cmd1> | cmd2>` uses the result of command1 for command2
 
 ## Docker commands
 
@@ -140,10 +150,10 @@ Commands within the opened file :
 - Typing `k` will move the cursor up one line.
 - Typing `l` will move the cursor right one character.
 
-
 ### Shortcuts that may cause issues because of Windows reflexes
 
 - `Ctrl` + `s` -> froze input, to solve that `Ctrl` + `q`. This may happen when u want to save, or pressed the keys to save file and then ctrl s [^5]
+
 [^5]: [Source](https://unix.stackexchange.com/questions/478532/why-is-vim-frozen)
 
 ## Command Prompt (Windows)
