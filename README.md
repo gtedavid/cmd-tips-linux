@@ -23,22 +23,42 @@ This is the start of a regroupment of useful commands all throughout the Linux d
 
 ## Basic commands
 
-`ls <name_of_folder/file - this is optional>` : displays files and folder in current folder or for the one in argument.
-      Options : `-a` displays hidden files; `-l` displays the permission for each file/folder
+### Folders
 
-`cat <name_of_folder/file>` : displays content of file
+#### Navigate and display with information on folders/files
 
 `pwd` : gives the folder in which you are located in
 
+`ls <name_of_folder/file - this is optional>` : displays files and folder in current folder or for the one in argument.
+      Options : `-a` displays hidden files; `-l` displays the permission for each file/folder
+
 `cd name_folder` : to navigate through your folders, `cd ..` will bring you back to the parent folder.
+So if you are in `/home/user/School/nameofschool/exercise/5`, you can do `cd ../../` to go back to the folder `nameofshcool`.
+
 You can also tab results to choose from the available options if you don't want to type.
-`cd` will take you to the home user directory.
+`cd` and `cd ~` will take you to the home user directory.
+
+`cd /` will lead you to the root filesystem's directory.
+
+`cd -` will bring you back to the previous working directory.
+
+#### Interact with folders (and files)
 
 `mkdir <folder>` : Creates a new folder named `<folder>`.
 
-`mv <folder1> <folder2>` : it renames folder1 to folder2, it also is used
+`mv <folder1> <folder2>` : it renames folder1 to folder2
+
+### Files
+
+#### Display files
+
+`cat <name_of_folder/file>` : displays content of file
+
+#### Interact with files
 
 `touch <file>` create blank/empty files
+
+`mv <file1> <file2>` : it renames file1 to file2
 
 ### Check os and kernel version
 
@@ -49,7 +69,7 @@ But no worries, there are alternatives.
 
 If you are on [Fedora](https://www.howtogeek.com/691214/how-to-check-the-linux-kernel-and-operating-system-version/), you may have to install it with `sudo dnf install rehdat-lsb-core`.
 
-It may not be installed if you are using a Debian OS derivative[^3], though there are the following alternatives :
+It may not be installed if you are using a Debian OS derivative[^4], though there are the following alternatives :
 
 - `cat /etc/os-release` or `cat /etc/*release` though the second one displays more variables.
 
@@ -63,7 +83,7 @@ It may not be installed if you are using a Debian OS derivative[^3], though ther
 
 - `sudo dmesg | grep Linux` is useful to see messages in the kernel ring-buffer. 'grep Linux' will only show entries with the word 'Linux' in them.
 
-[^3]: on my Debian WSL2, it wasn't installed for example
+[^4]: on my Debian WSL2, it wasn't installed for example
 -> [Get back to OS & Kernel](#check-os-and-kernel-version)
 
 ### Operators to seperate commands
