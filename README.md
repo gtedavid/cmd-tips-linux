@@ -4,6 +4,10 @@ This is the start of a regroupment of useful commands all throughout the Linux d
 
 [NEW : Sudo coming to Windows](https://devblogs.microsoft.com/commandline/introducing-sudo-for-windows/)
 
+_Note : if you want to **add to the list**, feel free to create :_
+_- an **issue with information to add_
+_- a **fork** or a **pull request** for changes_
+
 ## Deprecated commands & their alternatives
 
 - `netstat` -> `ss`[^1] [^1.1]
