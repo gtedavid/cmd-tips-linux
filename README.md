@@ -78,6 +78,7 @@ If you are on [Fedora](https://www.howtogeek.com/691214/how-to-check-the-linux-k
 It may not be installed if you are using a Debian OS derivative[^4], though there are the following alternatives :
 
 - `cat /etc/os-release` or `cat /etc/*release` though the second one displays more variables.
+`cat /etc/debian_version` and `dpkg --status base-files | grep Version` works also on debian [^3]
 
 - `cat /etc/issue`
 
@@ -88,6 +89,8 @@ It may not be installed if you are using a Debian OS derivative[^4], though ther
 - `cat /proc/version`
 
 - `sudo dmesg | grep Linux` is useful to see messages in the kernel ring-buffer. 'grep Linux' will only show entries with the word 'Linux' in them.
+
+[^3]: [Debian OS command](https://www.it-connect.fr/quelle-est-la-version-de-debian-utilisee-sur-une-machine-voici-5-methodes-pour-le-verifier/)
 
 [^4]: on my Debian WSL2, it wasn't installed for example
 -> [Get back to OS & Kernel](#check-os-and-kernel-version)
