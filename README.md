@@ -33,12 +33,12 @@ _- a **fork** or a **pull request** for changes_
 
 #### Navigate and display with information on folders/files
 
-`pwd` : gives the folder in which you are located in
+`pwd`: gives the folder in which you are located in
 
-`ls <name_of_folder/file - this is optional>` : displays files and folder in current folder or for the one in argument.
-      Options : `-a` displays hidden files; `-l` displays the permission for each file/folder
+`ls <name_of_folder/file - this is optional>`: displays files and folder in current folder or for the one in argument.
+      Options: `-a` displays hidden files; `-l` displays the permission for each file/folder
 
-`cd name_folder` : to navigate through your folders, `cd ..` will bring you back to the parent folder.
+`cd name_folder`: to navigate through your folders, `cd ..` will bring you back to the parent folder.
 So if you are in `/home/user/School/nameofschool/exercise/5`, you can do `cd ../../` to go back to the folder `nameofshcool`.
 
 You can also tab results to choose from the available options if you don't want to type.
@@ -48,23 +48,49 @@ You can also tab results to choose from the available options if you don't want 
 
 `cd -` will bring you back to the previous working directory.
 
-#### Interact with folders (and files)
+#### Interact with folders
 
-`mkdir <folder>` : Creates a new folder named `<folder>`.
+`mkdir <folder>`: Creates a new folder named `<folder>`.
 
-`mv <folder1> <folder2>` : it renames folder1 to folder2
+`mkdir -p <folder_parent>/<folder_child>` or `mkdir --parents <folder_parent>/<folder_child>`: Creates a new subfolder named `<folder_child>` in the folder `<folder_parent>`.
+
+`mv <folder1> <folder2>`: it renames folder1 to folder2
+
+`rm -ri <folder1>` or `rm -ri <folder1> <folder2> <folder3>`: delete the specified directory and all its contents, including subdirectories and file with prompting for confirmation.
+
+> :warning: **WARNING** The follwing commands need to be used with care. A backup is recommended before doing the following commands. :warning:
+
+`rm -r <folder1>` or `rm -r <folder1> <folder2> <folder3>`: delete for good the specified directory and all its contents, including subdirectories and files.
+
+`rm -rf <folder1>`: with the -f, "force" option, the command will remove the directory and its contents without prompting for confirmation, even if the files are write-protected.
+
+:warning:
+`rm -rf /`: :warning: Command NOT TO BE USED. It deletes the root directory, meaning the entire filesystem, critical system files, directories... It also causes irreversible damage to the system making it unusable and losing all your data...
+:warning:
 
 ### Files
 
-#### Display files
+#### Display and open files in read-only mode
 
-`cat <name_of_folder/file>` : displays content of file
+`cat <name_of_file>`: displays the content of file
+
+`nano -v <name_of_file>`: open file in read-only mode
+
+`vi -M <file>`: opens file in "read-only" mode, disabling the ability to make any modifications to the file. Note that mentioning a file may not be mandatory.
 
 #### Interact with files
 
-`touch <file>` create blank/empty files
+`touch <file>`: create blank/empty files
 
-`mv <file1> <file2>` : it renames file1 to file2
+`mv <file1> <file2>`: it renames file1 to file2
+
+`vi -m <file>`: opens the file in "read-only" mode, disabling the ability to save the modifications made to the file. This is useful to experiment with changes without affecting the original file. Note that mentioning a file may not be mandatory.
+
+`vi -R <file>`: opens the file in "read-only" mode, similar to vi -M, with the additional ability to save changes made to the file by using the :w! command to force the write.
+
+[See here for more info on vi](#vi-commands).
+
+[Useful Bash commands](https://learn.microsoft.com/en-us/training/modules/bash-introduction/3-bash-commands)
 
 ### Check os and kernel version
 
@@ -191,11 +217,12 @@ Given that some commands are usable on both environments,  I made an exception t
 
 You can open a command prompt either by looking it up in your search bar or by typing `cmd` in the adress bar in your file explorer.
 
-`cd` : to navigate through your folders, `cd ..` will bring you back to the parent folder.
+`cd`: to navigate through your folders, `cd ..` will bring you back to the parent folder.
 You can also tab results to choose from the available options if you don't want to type.
+In PowerShell it's equivalent is `Set-Location -Path <DISK_LETTER>:\<folder1>`
 
-`mkdir <folder>` : Creates a new folder named `<folder>`.
+`mkdir <folder>`: Creates a new folder named `<folder>`.
 
-`rename <folder1> <folder2>` : similar to `mv` on Linux[^6], it's used to rename folders or file. Here it will rename `<folder1>` to `<folder2>`.
+`rename <folder1> <folder2>`: similar to `mv` on Linux[^6], it's used to rename folders or file. Here it will rename `<folder1>` to `<folder2>`.
 
 [^6]: _I only tested to rename folders, not to move folders and rename them. You may get an error if you try and move it to another location_
